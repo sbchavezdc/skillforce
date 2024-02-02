@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:orientation="vertical"
+    tools:context=".Edit_Perfil">
+
+
+    <ImageButton
+        android:id="@+id/BtnUpdateImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/grup1"
+        />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="145pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:hint="User name" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="145pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="145pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:hint="Password" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtCalendario"
+        android:layout_width="145pt"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:hint="Your birthday"
+        />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="348dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="300dp" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="348dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="355dp" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="348dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="405dp" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="348dp"
+        android:src="@drawable/calendar_month"
+        android:layout_marginTop="460dp" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="Save"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="50dp"
+
+        />
+
+    <Button
+        android:id="@+id/btncanel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="Cancel"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp"
+        />
+
+
+
+</FrameLayout>

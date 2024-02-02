@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoeducacion"
+    android:orientation="vertical"
+    tools:context=".Education">
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="30dp"
+        android:padding="50dp"
+        android:text="Let's Start the evaluation"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50pt"
+        android:src="@drawable/certificado" />
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="380dp"
+        android:gravity="bottom|center_vertical"
+        android:padding="30dp"
+        android:text="You'll take an assessment to identify your most suitable learning style. When you're ready, press the next button"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNextE"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:text="Next"
+        />
+
+
+</FrameLayout>

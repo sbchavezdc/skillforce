@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoeducacion"
+    tools:context=".Support">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:text="What can we help you with?"
+        android:textSize="25sp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="40dp">
+    </TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textSuport"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSuport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What can we help you with?"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:translationX="70dp"
+        android:translationY="650dp" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:translationX="250dp"
+        android:translationY="650dp" />
+
+</FrameLayout>

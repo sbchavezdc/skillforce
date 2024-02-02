@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home"
+    android:orientation="vertical"
+    tools:context=".Agenda">
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:translationX="98dp"
+            android:translationY="650dp"
+            />
+
+        <Button
+            android:id="@+id/btncanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:translationX="238dp"
+            android:translationY="650dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/TexAgenda"
+            android:layout_width="240dp"
+            android:layout_height="84dp"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="95dp"
+            android:textSize="25sp"
+            android:text="Add Task"></TextView>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taskEditText"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="task..."
+            android:translationX="60dp"
+            android:translationY="160dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:text="Select Date"
+            android:translationX="145dp"
+            android:translationY="125dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/selectedDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="120dp"
+            android:text="Selected Date: " />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Diary"
+            android:icon="@drawable/calendario"
+            />
+        <item
+            android:id="@+id/Education"
+            android:title="Education"
+            android:icon="@drawable/estudio"
+            />
+        <item
+            android:id="@+id/Questions"
+            android:title="Test"
+            android:icon="@drawable/pregunta"
+            />
+        <item
+            android:id="@+id/chat"
+            android:title="Chat"
+            android:icon="@drawable/bot"
+            />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Setting"
+            android:icon="@drawable/configuraciones"
+            />
+        <item
+            android:id="@+id/nav_support"
+            android:title="Help and Support"
+            android:icon="@drawable/support"
+            />
+        <item
+            android:id="@+id/BtnSalir"
+            android:title="Exit"
+            android:icon="@drawable/salida"
+            />
+
+
+    </group>
+</menu>

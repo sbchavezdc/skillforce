@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoeducacion"
+    android:orientation="vertical"
+    tools:context=".Questions">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        android:text="Answer the next questions to know your learning style"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="130dp">
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+                    android:id="@+id/btnNextQ"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Next" />
+
+</FrameLayout>

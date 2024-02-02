@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.skillforce.ui.home.HomeFragment"
+        android:label="@string/menu_Tareas"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_agenda"
+            app:destination="@id/agenda" />
+        <action
+            android:id="@+id/action_nav_home_to_menu_Perfil"
+            app:destination="@id/menu_Perfil" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Chat"
+        android:name="com.example.skillforce.Chat"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_Chat_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Test"
+        android:name="com.example.skillforce.Questions"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_questions" >
+        <action
+            android:id="@+id/action_Test_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Education"
+        android:name="com.example.skillforce.Education"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_education" >
+        <action
+            android:id="@+id/action_Education_to_questions"
+            app:destination="@id/Questions" />
+        <action
+            android:id="@+id/action_Education_to_chat"
+            app:destination="@id/chat" />
+        <action
+            android:id="@+id/action_Education_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.skillforce.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_Setting"
+        tools:layout="@layout/fragment_slideshow" />
+
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.skillforce.Support"
+        android:label="@string/menu_Support"
+        tools:layout="@layout/fragment_support" >
+        <action
+            android:id="@+id/action_nav_support_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Questions"
+        android:name="com.example.skillforce.Questions"
+        android:label="Questions"
+        tools:layout="@layout/fragment_questions" >
+        <action
+            android:id="@+id/action_Questions_to_congratulations"
+            app:destination="@id/Congratulations" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Congratulations"
+        android:name="com.example.skillforce.Congratulations"
+        android:label="Congratulations"
+        tools:layout="@layout/fragment_congratulations" >
+        <action
+            android:id="@+id/action_Congratulations_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.skillforce.Chat"
+        android:label="Study Tips"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/agenda"
+        android:name="com.example.skillforce.Agenda"
+        android:label="Diary"
+        tools:layout="@layout/fragment_agenda" >
+        <action
+            android:id="@+id/action_agenda_to_agenda_Notas"
+            app:destination="@id/agenda_Notas" />
+        <action
+            android:id="@+id/action_agenda_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/agenda_Notas"
+        android:name="com.example.skillforce.Agenda_Notas"
+        android:label="Grades"
+        tools:layout="@layout/fragment_agenda__notas" />
+    <fragment
+        android:id="@+id/menu_Perfil"
+        android:name="com.example.skillforce.Menu_Perfil"
+        android:label="Profile"
+        tools:layout="@layout/fragment_menu__perfil" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.skillforce.MainActivity"
+        android:label="."
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/login2"
+        android:name="com.example.skillforce.Login"
+        android:label="Login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/recoverPassword"
+        android:name="com.example.skillforce.RecoverPassword"
+        android:label="Recover Password"
+        tools:layout="@layout/activity_recover_password" />
+    <activity
+        android:id="@+id/newPassword"
+        android:name="com.example.skillforce.NewPassword"
+        android:label="New Password"
+        tools:layout="@layout/activity_new_password" />
+    <activity
+        android:id="@+id/singUp"
+        android:name="com.example.skillforce.SingUp"
+        android:label="Sing Up"
+        tools:layout="@layout/activity_sing_up" />
+    <activity
+        android:id="@+id/menu"
+        android:name="com.example.skillforce.Menu"
+        android:label="Menu"
+        tools:layout="@layout/app_bar_menu" />
+    <fragment
+        android:id="@+id/edit_Perfil"
+        android:name="com.example.skillforce.Edit_Perfil"
+        android:label="Edit Perfil"
+        tools:layout="@layout/fragment_edit__perfil" >
+        <action
+            android:id="@+id/action_edit_Perfil_to_menu_Perfil"
+            app:destination="@id/menu_Perfil" />
+        <action
+            android:id="@+id/action_edit_Perfil_to_menu2"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.skillforce.ui.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <activity
+        android:id="@+id/tareas"
+        android:name="com.example.skillforce.Tareas"
+        android:label="activity_tareas"
+        tools:layout="@layout/activity_tareas" />
+    <fragment android:id="@+id/placeholder" />
+
+
+</navigation>
